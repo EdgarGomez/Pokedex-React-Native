@@ -1,5 +1,6 @@
+import { NavigationContainer } from '@react-navigation/native'
 import React from 'react'
-import { View, Text, ScrollView, StyleSheet, ScrollViewPropsIOS } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, ScrollViewPropsIOS, TouchableOpacity } from 'react-native'
 import { PokemonFull } from '../interfaces/pokemonInterfaces'
 import { FadeInImage } from './FadeInImage'
 
@@ -84,11 +85,11 @@ export const PokemonDetails = ({pokemon}: Props) => {
         </View>
         
         <View style={{
-          marginBottom: 20,
+          marginBottom: 80,
           marginTop: 20,
           alignItems: 'center'
         }}>
-          <FadeInImage uri={pokemon.sprites.front_default} style={styles.basicSprite} />
+            <FadeInImage uri={pokemon.sprites.front_default} style={styles.basicSprite} />
         </View>
 
       </View>
