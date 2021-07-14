@@ -5,11 +5,17 @@ import { FadeInImage } from '../components/FadeInImage'
 import { PokemonCard } from '../components/PokemonCard'
 import { usePokemonPaginated } from '../hooks/usePokemonPaginated'
 import { styles } from '../theme/appTheme'
+import SplashScreen from 'react-native-splash-screen'
+import { useEffect } from 'react'
 
 export const HomeScreen = () => {
 
   const {top} = useSafeAreaInsets();
   const {isLoading, simplePokemonList, loadPokemons} = usePokemonPaginated();
+
+  useEffect(() => {
+    SplashScreen.hide();
+  }, [])
 
   return (
     <>
