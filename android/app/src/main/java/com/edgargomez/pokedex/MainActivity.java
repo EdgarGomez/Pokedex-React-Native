@@ -1,4 +1,5 @@
-package com.pokedex;
+//package com.pokedex;
+package com.edgargomez.pokedex;
 import android.os.Bundle; 
 
 import com.facebook.react.ReactActivity;

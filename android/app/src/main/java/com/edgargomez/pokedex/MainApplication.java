@@ -1,4 +1,5 @@
-package com.pokedex;
+//package com.pokedex;
+package com.edgargomez.pokedex;
 // react-native-splash-screen >= 0.3.1
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
